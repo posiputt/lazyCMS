@@ -34,7 +34,7 @@
     <meta name="selected-link" value="repo_source" data-pjax-transient>
       <meta name="google-analytics" content="UA-3769691-2">
 
-    <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="collector-cdn.github.com" name="octolytics-script-host" /><meta content="github" name="octolytics-app-id" /><meta content="5846FE4F:5F97:D8A7E89:546E09E5" name="octolytics-dimension-request_id" /><meta content="1057954" name="octolytics-actor-id" /><meta content="posiputt" name="octolytics-actor-login" /><meta content="56ee0b55a2575cefdea8a8e7e9869587dcc44e856330a8a528d56256be9cf44d" name="octolytics-actor-hash" />
+    <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="collector-cdn.github.com" name="octolytics-script-host" /><meta content="github" name="octolytics-app-id" /><meta content="5846FE4F:67D2:23BAD7F1:546E0AE6" name="octolytics-dimension-request_id" /><meta content="1057954" name="octolytics-actor-id" /><meta content="posiputt" name="octolytics-actor-login" /><meta content="56ee0b55a2575cefdea8a8e7e9869587dcc44e856330a8a528d56256be9cf44d" name="octolytics-actor-hash" />
     
     <meta content="Rails, view, blob#show" name="analytics-event" />
 
@@ -44,7 +44,7 @@
 
 
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="+R2eZIsD7OQPnOOAKHRfcpc8dhHdKKln8LlmzzmWJpXlk7QocsGhq5JwYPuOODGIfzlUx9XaGD3iv0drAZV5bw==" name="csrf-token" />
+<meta content="kggzesuFON47ZYJ/mUn+4SVR76DqQuuUExepnrETItuR4inoRI5QFrY4U/wKvObUaCA5Xkwvbo4NiJnzW1guhA==" name="csrf-token" />
 
     <link href="https://assets-cdn.github.com/assets/github-103bf8d2b1dea2db4acbc559814b3fd9946f59c9095d752f791cc53756725cd0.css" media="all" rel="stylesheet" type="text/css" />
     <link href="https://assets-cdn.github.com/assets/github2-e48cf9f7b34f2138837ae8f236223b114441dde478e265f64e1ad9bf6bd76afd.css" media="all" rel="stylesheet" type="text/css" />
@@ -167,7 +167,7 @@
   </li>
 
   <li class="header-nav-item">
-    <form accept-charset="UTF-8" action="/logout" class="logout-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="6Cq9WIaViIG7Mf63A6EGHyCZhmwf+QvOf0GVQS5twD7IBeMutDggq+4/gQqy9Mu9EPnIOV+Qno2dJW4FhXMvcw==" /></div>
+    <form accept-charset="UTF-8" action="/logout" class="logout-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="jxga6tAMJvOdttCYY2xQmXFth2RVpLHCGUtzi5S8NIe+rU1b55tK17NAcgeJriqYIZ6Ex41HYEQyc2P3r88V9w==" /></div>
       <button class="header-nav-link sign-out-button tooltipped tooltipped-s" aria-label="Sign out" data-ga-click="Header, sign out, icon:logout">
         <span class="octicon octicon-sign-out"></span>
       </button>
@@ -196,7 +196,7 @@
 <ul class="pagehead-actions">
 
     <li class="subscription">
-      <form accept-charset="UTF-8" action="/notifications/subscribe" class="js-social-container" data-autosubmit="true" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="9SnzSRTpctAp4f2HhFVmrCQuIv07ewMcSOQFmrkMBlq0t8WXHMEOKVDmgiUEqNalUzGeU9OpeqQDWJGAet+A/w==" /></div>  <input id="repository_id" name="repository_id" type="hidden" value="26916303" />
+      <form accept-charset="UTF-8" action="/notifications/subscribe" class="js-social-container" data-autosubmit="true" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="x5tNFDJ708uGNfO8pUXiQ99brpD/6WgYvdh+VCvq7l3+vpkm1uFYRtSImnjf3GaeYGEFeHboaOAUKqdrjAs0pg==" /></div>  <input id="repository_id" name="repository_id" type="hidden" value="26916303" />
 
     <div class="select-menu js-menu-container js-select-menu">
       <a class="social-count js-social-count" href="/posiputt/lazyCMS/watchers">
@@ -271,7 +271,7 @@
     
   <div class="js-toggler-container js-social-container starring-container ">
 
-    <form accept-charset="UTF-8" action="/posiputt/lazyCMS/unstar" class="js-toggler-form starred js-unstar-button" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="orf+pqhgDPK2nqirBT6TwpMAW3FBDPXSyMUZZtw51inWnwzVEpCSjAMCuk0Rt7Ov+GK2ees1vP8EflPi5H6WYg==" /></div>
+    <form accept-charset="UTF-8" action="/posiputt/lazyCMS/unstar" class="js-toggler-form starred js-unstar-button" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="4bsGZnjX/7kljprN8duoC8p+F9yp+m/cAu44OTqQPeSDfiQvFzJGvZJ562J7bAkLavIWOSGmsEKbmssSqx+Xmw==" /></div>
       <button
         class="minibutton with-count js-toggler-target star-button"
         aria-label="Unstar this repository" title="Unstar posiputt/lazyCMS">
@@ -282,7 +282,7 @@
           0
         </a>
 </form>
-    <form accept-charset="UTF-8" action="/posiputt/lazyCMS/star" class="js-toggler-form unstarred js-star-button" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="hOKgUEhLJpAfd3H5Xi8RsIjjWQ7CjtN+SdjLDDP2SPZXKP4s0QaERidc24wMub2smEv6kPXu1j6xjFCSj9osWA==" /></div>
+    <form accept-charset="UTF-8" action="/posiputt/lazyCMS/star" class="js-toggler-form unstarred js-star-button" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="nElTGUQe78HOSRS+NnlS146wvSMvpm3UCebIkBHokMsJjGVeKFCJYjyEhwhfLx055myfsOGZ06wWuc/pUUTwLg==" /></div>
       <button
         class="minibutton with-count js-toggler-target star-button"
         aria-label="Star this repository" title="Star posiputt/lazyCMS">
@@ -511,7 +511,7 @@
             </div> <!-- /.select-menu-item -->
         </div>
 
-          <form accept-charset="UTF-8" action="/posiputt/lazyCMS/branches" class="js-create-branch select-menu-item select-menu-new-item-form js-navigation-item js-new-item-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="UJfVvW76Ub13i1kOKuFjkQuCdgzWQYickv1cf/Fj9t7/ECjvmt3PE40oZniC6yZu3H4uDms+Vl0n3PqU/hv/dQ==" /></div>
+          <form accept-charset="UTF-8" action="/posiputt/lazyCMS/branches" class="js-create-branch select-menu-item select-menu-new-item-form js-navigation-item js-new-item-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="YUBv2+kX/Daf/2Zu97WNFJGXA53snalFpA5L7/bRq7rp9ZWasB/398A8FK99/wHNKIENoeFUNDdHQCxH3/g/6A==" /></div>
             <span class="octicon octicon-git-branch select-menu-item-icon"></span>
             <div class="select-menu-item-text">
               <h4>Create branch: <span class="js-new-item-name"></span></h4>
@@ -731,7 +731,7 @@
     </a>
 
     <ul class="site-footer-links">
-      <li>&copy; 2014 <span title="0.05665s from github-fe119-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+      <li>&copy; 2014 <span title="0.04692s from github-fe138-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
         <li><a href="/site/terms">Terms</a></li>
         <li><a href="/site/privacy">Privacy</a></li>
         <li><a href="/security">Security</a></li>

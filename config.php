@@ -20,4 +20,5 @@
   // flattr-specific
   
   $GLOBALS["cfg_flattr_user"]	= ""; // your username on flattr.com
+  $GLOBALS["cfg_flattr_tags"]	= "comic,webcomic,illustration";
 ?>

@@ -59,6 +59,28 @@
     }
   }
 
+// generate a static flattr button
+  function show_flattr_btn () {
+    echo '<a href="https://flattr.com/submit/auto?user_id=' .
+    $GLOBALS["cfg_flattr_user"] .
+    '&url=' .
+    $GLOBALS["cfg_url"].'?page='.$_GET["page"] .
+    '&title=' .
+    str_replace(" ", "%20", $GLOBALS["cfg_title"]) .
+    '%20Seite%20' .
+    $_GET["page"] .
+    '&description=' .
+    str_replace(" ","%20",$GLOBALS["cfg_description"]) .
+    '%20Seite%20' .
+    $_GET["page"] .
+    '&language=' .
+    $GLOBALS["cfg_language"] .
+    '&tags=' .
+    $GLOBALS["cfg_flattr_tags"] .
+    '&hidden=1&category=images">' .
+    '<img src="https://api.flattr.com/button/flattr-badge-large.png" alt="Flattr our API Documentation" />' .
+    '</a>';
+  }
   
 /* function update_rss NOT IN USE (maybe someday)
 
