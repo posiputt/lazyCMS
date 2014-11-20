@@ -33,7 +33,10 @@
       $notfound = true;
     }
   }
-  
+ 
+// turn_page generates a link to a neighbouring page
+// a positive direction will result in a link to the neighbouring with the bigger number ("newer")
+// a negative will result in a link to the smaller number ("older") 
   function turn_page ($current_page, $direction) {
     $prefix_length = strlen($GLOBALS["cfg_prefix"]);
     $suffix_length = strlen($GLOBALS["cfg_imgext"]);
