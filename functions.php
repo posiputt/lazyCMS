@@ -7,7 +7,11 @@
   include "config.php";
   
   if (!isset($_GET["page"])) {
-    $_GET["page"] = "0001";
+    // $_GET["page"] = "0001";
+    $pages = scan_dir ("./".$GLOBALS["cfg_imgpath"]);
+    $last = end($pages);
+    $id = rtrim(ltrim($last, $GLOBALS["cfg_prefix"]), $GLOBALS["cfg_imgext"]);
+    $_GET["page"] = $id;
   }
   
   $pages = NULL;	// array of pages
@@ -58,25 +62,39 @@
 // turn_page generates a link to a neighbouring page
 // a positive direction will result in a link to the neighbouring with the bigger number ("newer")
 // a negative will result in a link to the smaller number ("older") 
-  function turn_page ($current_page, $direction) {
-    $prefix_length = strlen($GLOBALS["cfg_prefix"]);
-    $suffix_length = strlen($GLOBALS["cfg_imgext"]);
+  function turn_page ($current_page, $direction, $thumb="no") {
+	$prefix_length = strlen($GLOBALS["cfg_prefix"]);
+	$suffix_length = strlen($GLOBALS["cfg_imgext"]);
     
-    if ($direction >= 0) {
-      $direction = 1;
-    } else {
-      $direction = -1;
-    }
+	if ($direction >= 0) {
+		$direction = 1;
+	} else {
+      		$direction = -1;
+	}
   
-    $pages = scan_dir ("./".$GLOBALS["cfg_imgpath"]);
-    $key = array_search($GLOBALS["cfg_prefix"].$current_page.$GLOBALS["cfg_imgext"], $pages);
-    $page = substr ($pages[$key+$direction], $prefix_length, -$suffix_length);
+	$pages = scan_dir ("./".$GLOBALS["cfg_imgpath"]);
+	$key = array_search($GLOBALS["cfg_prefix"].$current_page.$GLOBALS["cfg_imgext"], $pages);
+	$page = substr ($pages[$key+$direction], $prefix_length, -$suffix_length);
+	
+	if ($thumb == "yes") {
+		$text = '<img src="'
+		.$GLOBALS["cfg_thumbpath"]
+		.$GLOBALS["cfg_prefix"]
+		.$page
+		.'_t'
+		.$GLOBALS["cfg_imgext"]
+		.'" />';
+	} elseif ($thumb == "no") {
+		$text = $page;
+	}
     
-    //VAR_DUMP($pages[$key+1]);
-    if ($pages[$key+$direction]!=NULL) {
-      echo '<a href="'.$GLOBALS["cfg_url"].'?page='.$page.'">'.$page.'</a>';
-    } else {
-      echo "";
+	
+
+	//VAR_DUMP($pages[$key+1]);
+	if ($pages[$key+$direction]!=NULL) {
+		echo '<a href="'.$GLOBALS["cfg_url"].'?page='.$page.'">'.$text.'</a>';
+	} else {
+		echo "";
     }
   }
 
