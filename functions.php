@@ -23,15 +23,36 @@
     return $pages;
   }
   
-  function show_page ($page) {    
-    if (file_exists($filename = "./".$GLOBALS["cfg_imgpath"].$GLOBALS["cfg_prefix"].$page.$GLOBALS["cfg_imgext"])) {
-      echo "<img src=".$filename." />";
-      $notfound = false;
-    } else {
-      echo $filename;
-      echo "<img src=".$GLOBALS["cfg_404img"]." />";
-      $notfound = true;
-    }
+  function show_image ($page, $size="full") {    
+	    if ($size == "full") {	  
+		    if (file_exists($filename = "./"
+			    .$GLOBALS["cfg_imgpath"]
+			    .$GLOBALS["cfg_prefix"]
+			    .$page
+			    .$GLOBALS["cfg_imgext"])){
+			echo "<img src=".$filename." />";
+			$notfound = false;
+		    } else {
+			echo $filename;
+			echo "<img src=".$GLOBALS["cfg_404img"]." />";
+			$notfound = true;
+		    }
+	    } elseif ($size == "thumbnail") {
+		    if (file_exists($filename = "./"
+			    .$GLOBALS["cfg_thumbpath"]
+			    .$GLOBALS["cfg_prefix"]
+			    .$page
+			    .$GLOBALS["cfg_imgext"])){
+			echo "<img src=".$filename." />";
+			$notfound = false;
+		    } else {
+			/*
+			echo $filename;
+			echo "<img src=".$GLOBALS["cfg_404img"]." />";
+			$notfound = true;
+			 */
+		    }
+	    }
   }
  
 // turn_page generates a link to a neighbouring page
