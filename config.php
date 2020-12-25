@@ -4,6 +4,7 @@
   $GLOBALS["cfg_prefix"]	= "2ke_";  // prefix for files to be managed
   $GLOBALS["cfg_url"]		= "";  // shouldn't be necessary
   $GLOBALS["cfg_imgpath"]	= "img/";
+  $GLOBALS["cfg_thumbpath"]	= "thumbs/";
   $GLOBALS["cfg_imgext"]	= ".jpg";
   $GLOBALS["cfg_404img"]	= "./404.gif";
   
